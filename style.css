@@ -1,0 +1,50 @@
+/* Default Settings */
+
+:root {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    margin: 0;
+
+    height: 100vh;
+
+    background: linear-gradient(to bottom, transparent 0, #e6b6b6 100%);
+
+    overflow: hidden;
+}
+
+/* Text */
+
+h1, h2, p {
+    text-align: center;
+    margin-bottom: 0;
+    user-select: none;
+}
+
+h2, p {
+    opacity: 50%;
+    text-shadow: lime 2px 2px 2px;
+}
+
+p {
+    font-size: 12px;
+}
+
+/* Content */
+
+.met {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 5em;
+    user-select: none;
+}
+
+.barrier {
+    background-image: url(img/Unnamed.png);
+    height: 20px;
+}
+
+.hidden {
+    opacity: 0;
+}
