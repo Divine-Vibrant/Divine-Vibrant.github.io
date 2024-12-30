@@ -1,0 +1,229 @@
+@font-face {
+    font-family: Watatsuki-Tech-Sans;
+    src: url(./watatsuki-tech-sans-font/WatatsukiTechSans-GOJxA.ttf);
+}
+
+html {
+    font-family: Watatsuki-Tech-Sans;
+    font-size: x-large;
+    color:rgb(145, 190, 222);
+
+    user-select: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(17, 4, 19);
+
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(145, 190, 222);
+}
+
+a:hover {
+    color: rgb(222, 145, 145);
+}
+
+a:focus-within {
+    color: rgb(222, 145, 145);
+    background-color: rgb(208, 222, 145);
+
+    transition-duration: 500ms;
+
+    padding: calc(1em - 10px);
+    border-radius: 10px;
+
+    outline: none;
+}
+
+/* Menu */
+
+header {
+    background: rgb(38, 30, 38);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1em;
+
+    height: 10vh;
+}
+
+.menulink {
+    padding: 5px 0;
+    margin: 0 15px;
+}
+
+.menulink:hover {
+    animation: hop 250ms 1 ease-in-out;
+}
+
+@keyframes hop {
+    from {
+        
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    to {
+
+    }
+}
+
+.pfp {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(to left, crimson, rgb(0, 255, 255), purple, rgb(0, 255, 255), crimson);
+    background-size: 500%;
+
+    animation: pfp 5s infinite linear;
+}
+
+@keyframes pfp {
+
+    to {
+        background-position: 300px -300px;
+    }
+
+}
+
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.card p {
+    margin: 0;
+}
+
+.id {
+    margin-left: 1em;
+}
+
+.pn {
+    color:rgba(145, 190, 222, 0.5)
+}
+
+.nav {
+    transform: translateX(-70px);
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    width: 105px;
+
+    text-align: center;
+    font-size: large;
+    color: black;
+    text-shadow: azure 1px 1px 1px;
+
+    opacity: 10%;
+
+    margin: 0;
+
+    transition-duration: 500ms;
+}
+
+.header-right:hover {
+    opacity: 100%;
+
+    color: azure;
+    text-shadow: black 1px 1px 1px;
+}
+
+/* Main Dish */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition-duration: 500ms;
+}
+
+h1 {
+    margin-bottom: 0; 
+}
+
+h2 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.blog-name {
+    font-size: 30px;
+}
+
+.date {
+    margin: 0;
+    font-size: large;
+
+    color:rgba(145, 190, 222, 0.8)
+}
+
+#alt-web {
+    width: 400px;
+}
+
+.big-text {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.box {
+    background-color: rgba(30, 255, 15, 0.1);
+    width: 900px;
+    height: 100%;
+
+    padding: 1em;
+}
+
+.box p {
+    margin-left: 1em;
+}
+
+.cross {
+    text-decoration: line-through;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Dessert */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 1em 0;
+}
+
+.end {
+    text-align: center;
+    opacity: 50%;
+
+    margin: 0;
+}
+
+hr {
+    width: 150px;
+}
