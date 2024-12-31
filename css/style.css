@@ -190,6 +190,8 @@ h2 {
     height: 100%;
 
     padding: 1em;
+
+    border-radius: 5px;
 }
 
 .box p {
@@ -206,6 +208,39 @@ h2 {
 
 .bold {
     font-weight: bold;
+}
+
+#to-dos-box {
+    width: 195px;
+    height: 95px;
+
+    margin-top: 1em;
+
+    background: rgba(255, 15, 15, 0.1);
+    border-radius: 2em 2em 1em 1em;
+    box-shadow: white 0 0 5px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    transition: 500ms ease-in-out;
+
+    text-align: center;
+}
+
+#to-dos-box:hover {
+    width: 75%;
+    height: 100%;
+}
+
+.nmb {
+    margin-bottom: 0;
+}
+
+#to-dos-box li {
+    text-align: left;
 }
 
 /* Dessert */
