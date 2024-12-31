@@ -169,6 +169,7 @@ h2 {
 
 .date {
     margin: 0;
+    margin-bottom: 2em;
     font-size: large;
 
     color:rgba(145, 190, 222, 0.8)
